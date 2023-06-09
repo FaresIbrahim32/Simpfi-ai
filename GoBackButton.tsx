@@ -1,10 +1,11 @@
-import { useRouter } from 'next/router';
+'use client'
+import { useRouter } from 'next/navigation';
 
 const GoToButton = () => {
   const router = useRouter();
 
   const goToPage = () => {
-    router.push('@src/dashboard/workspaces'); 
+    router.push('/dashboard/workspaces'); 
   };
 
   return (
